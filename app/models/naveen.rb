@@ -1,0 +1,2 @@
+class Naveen < ApplicationRecord
+end
