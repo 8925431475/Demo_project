@@ -41,6 +41,7 @@ class FormsController < ApplicationController
 
  
   def update
+    binding.pry
     respond_to do |format|
       if @form.update(form_params)
         format.html { redirect_to @form, notice: "Form was successfully updated." }
