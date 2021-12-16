@@ -1,21 +1,33 @@
 <p id="notice"><%= notice %></p>
+<br>
+<br>
 
-<h1>welcome to this site</h1>
+<center>
+
+<h1>welcome to this site</h1></center>
 
 <table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th colspan="3"></th>
-    </tr>
+    
   </thead>
+  <center>
+  <br>
+  <br>
+  <%= link_to 'New Form', new_form_path %>
+
+  <br>
+  <br>
+  <br>
+  </center>
 
   <tbody>
     <% @forms.each do |form| %>
       <tr>
-        <td><%= form.name %></td>
-        <td><%= form.phone %></td>
+       
+        
+       
+
+      
         <td><%= link_to 'Show', form %></td>
         <td><%= link_to 'Edit', edit_form_path(form) %></td>
         <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Form', new_form_path %>
+

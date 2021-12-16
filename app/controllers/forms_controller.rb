@@ -11,6 +11,9 @@ class FormsController < ApplicationController
   end
 
   # GET /forms/new
+
+  
+ 
   def new
     @form = Form.new
   end
@@ -22,7 +25,7 @@ class FormsController < ApplicationController
   # POST /forms or /forms.json
   def create
     @form = Form.new(form_params)
-
+   
     respond_to do |format|
       if @form.save
         format.html { redirect_to @form, notice: "Form was successfully created." }
@@ -35,6 +38,8 @@ class FormsController < ApplicationController
   end
 
   # PATCH/PUT /forms/1 or /forms/1.json
+
+ 
   def update
     respond_to do |format|
       if @form.update(form_params)
@@ -48,6 +53,8 @@ class FormsController < ApplicationController
   end
 
   # DELETE /forms/1 or /forms/1.json
+
+ 
   def destroy
     @form.destroy
     respond_to do |format|
